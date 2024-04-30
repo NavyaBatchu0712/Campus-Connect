@@ -75,13 +75,13 @@ Follow the instructions below to set up and run CampusConnect on your local mach
 ****Run the main application file****: python main.py.
 
 
-## Future Work
+#### Future Work
 
-- **Adding More Data**: Expand the dataset by incorporating data from other relevant URLs related to Sacramento State University. This could include information from departmental pages, faculty profiles, or campus news sources.
+- *Adding More Data*: Expand the dataset by incorporating data from other relevant URLs related to Sacramento State University. This could include information from departmental pages, faculty profiles, or campus news sources.
 
-- **Fine-Tuning Data for Accuracy**: Implement techniques such as  model fine-tuning to improve the accuracy of the project's outputs. This involves refining the existing data sources and optimizing the models used in the project to ensure more precise and reliable results.
+- *Fine-Tuning Data for Accuracy*: Implement techniques such as  model fine-tuning to improve the accuracy of the project's outputs. This involves refining the existing data sources and optimizing the models used in the project to ensure more precise and reliable results.
 
-- **Building a Web Application**: Develop a web application using HTML, CSS, and JavaScript to provide a user-friendly interface for accessing and interacting with the project's data. The application could include features such as search functionality, filtering options, and visualization tools to enhance the user experience.
+- *Building a Web Application*: Develop a web application using HTML, CSS, and JavaScript to provide a user-friendly interface for accessing and interacting with the project's data. The application could include features such as search functionality, filtering options, and visualization tools to enhance the user experience.
 
 
 **References**:
