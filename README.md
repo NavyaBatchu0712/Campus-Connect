@@ -75,6 +75,13 @@ Follow the instructions below to set up and run CampusConnect on your local mach
 ****Run the main application file****: python main.py.
 
 
+## Tech Stack
+
+- **OpenAI**: v1.24.0
+- **LangChain**: v0.1.16
+- **Python**: v3.10.12
+
+
 #### Future Work
 
 - *Adding More Data*: Expand the dataset by incorporating data from other relevant URLs related to Sacramento State University. This could include information from departmental pages, faculty profiles, or campus news sources.
@@ -86,9 +93,18 @@ Follow the instructions below to set up and run CampusConnect on your local mach
 
 **References**:
                                                                                                                                                                                          
-          https://dreamproit.com/blog/2024-02-06-building-domain-specific-LLMs-how-to-work-with-your-own-data/index.html
-          https://docs.taipy.io/en/release-3.0/knowledge_base/tutorials/chatbot/
-          https://www.linkedin.com/pulse/future-language-models-rise-domain-specific-expertise-magnuszewski-stwoe/
+  https://dreamproit.com/blog/2024-02-06-building-domain-specific-LLMs-how-to-work-with-your-own-data/index.html
+  https://docs.taipy.io/en/release-3.0/knowledge_base/tutorials/chatbot/
+  https://www.linkedin.com/pulse/future-language-models-rise-domain-specific-expertise-magnuszewski-stwoe/
+
+## Additional Resources and Learnings
+
+- [Haystack Tutorials](https://haystack.deepset.ai/tutorials): Explore tutorials on using the Haystack framework for building question-answering systems, semantic search, and more.
+
+- [Comprehensive Guide for Building RAG-based LLM Applications (Part 1)](https://www.anyscale.com/blog/a-comprehensive-guide-for-building-rag-based-llm-applications-part-1): Learn about building RAG (Retriever-Reader-Generator)-based Large Language Model (LLM) applications, including architecture, components, and best practices.
+
+- [LangChain Crash Course](https://codebasics.io/resources/langchain-crash-course): Dive into a crash course on LangChain, covering fundamental concepts, usage, and examples for implementing language models and NLP tasks.
+
           
 
 
