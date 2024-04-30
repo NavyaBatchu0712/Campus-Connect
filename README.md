@@ -20,8 +20,9 @@ CampusConnect an intelligent chat program for Sacramento State University. The o
 
 The data used in this project is sourced from Sacramento State University (CSUS) URLs, which serve as the authoritative source of information for various departments, courses, and resources. The following URLs are examples of the source of truth for specific data categories:
 
-CSUS Computer Science Department - Meet Us
-CSUS Course Catalog - Computer Science Courses
+                                https://catalog.csus.edu/courses-a-z/csc/
+                                https://www.csus.edu/college/engineering-computer-science/computer-science/meet-us/
+
 By utilizing these URLs as the source of truth, we ensure that the data used in the project remains accurate, up-to-date, and aligned with official university information.
 
 
@@ -32,32 +33,32 @@ The workflow consists of the following steps:
 
 ****Data Extraction with BeautifulSoup (bs4)****:
 
--Initially, hyperlinks are extracted from URLs using BeautifulSoup (bs4).
--This step aims to gather relevant data sources for subsequent processing.
+         -Initially, hyperlinks are extracted from URLs using BeautifulSoup (bs4).
+         -This step aims to gather relevant data sources for subsequent processing.
 
 ****Text Embedding with TensorFlow Hub****:
 
--The extracted hyperlinks are utilized to retrieve text data.
--TensorFlow Hub is employed to embed the text data into high-dimensional vector representations.
--This process enhances the semantic understanding of the text, facilitating more effective information retrieval.
+         -The extracted hyperlinks are utilized to retrieve text data.
+         -TensorFlow Hub is employed to embed the text data into high-dimensional vector representations.
+         -This process enhances the semantic understanding of the text, facilitating more effective information retrieval.
 
 ****Document Similarity Search****:
 
--The similarity_search(query) function is employed to extract similar data based on the user's query.
--Utilizing similarity scores as metrics, relevant documents are identified for further processing.
--This step ensures that the retrieved documents are contextually aligned with the user's query.
+        -The similarity_search(query) function is employed to extract similar data based on the user's query.
+        -Utilizing similarity scores as metrics, relevant documents are identified for further processing.
+        -This step ensures that the retrieved documents are contextually aligned with the user's query.
 
 ****QA Pipeline with OpenAI API and LLM****:
 
--Utilizing the OpenAI API key, a Question Answering (QA) pipeline is instantiated.
--The text data is segmented into chunks, and a document search is conducted using LangChain.
--This step ensures that relevant documents containing potential answers are identified efficiently.
+      -Utilizing the OpenAI API key, a Question Answering (QA) pipeline is instantiated.
+     -The text data is segmented into chunks, and a document search is conducted using LangChain.
+     -This step ensures that relevant documents containing potential answers are identified efficiently.
 
 ****Query Processing and Response Generation****:
 
--User queries, such as "How to contact registration office?", are retrieved for processing.
--Based on the retrieved documents and the query, the QA pipeline generates contextually relevant responses.
--The responses are presented to the user via the CampusConnect chat interface.
+    -User queries, such as "How to contact registration office?", are retrieved for processing.
+    -Based on the retrieved documents and the query, the QA pipeline generates contextually relevant responses.
+    -The responses are presented to the user via the CampusConnect chat interface.
 
 **Getting Started**:
 
