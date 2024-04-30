@@ -10,8 +10,10 @@ CampusConnect an intelligent chat program for Sacramento State University. The o
          -Large Language Models (LLMs): Leveraged from OpenAI for advanced Natural Language Processing (NLP) capabilities.
                                                                                                                                                                                          
          -OpenAI API Key Required for accessing OpenAI's LLMs and other services through their API.
-                                                                    -Language Model (e.g., TensorFlow Hub): Possibly used for fine-tuning and deploying the LLM for improved understanding and response generation.
-                                                                    -TensorFlow Hub: Potentially used for accessing pre-trained language models or embeddings for NLP tasks.
+                                                                                                                                                                                         
+           -Language Model (e.g., TensorFlow Hub): Possibly used for fine-tuning and deploying the LLM for improved understanding and response generation.
+                                                                                                                                                                                         
+            -TensorFlow Hub: Potentially used for accessing pre-trained language models or embeddings for NLP tasks.
 
 **Source of Truth**:
 
