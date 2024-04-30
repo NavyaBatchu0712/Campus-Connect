@@ -1,12 +1,19 @@
 **Problem Statement**: 
+
 CampusConnect an intelligent chat program for Sacramento State University. The objective is to optimise the campus experience for users of Sac State University by providing them with assistance with departmental information, job postings, event calendars, and all other relevant information about Sac State University.
 
 **Requirements** :
+
 ****Google Colab****: Utilized as the primary development environment for coding and experimentation.
+
 ****Web Scraping with BeautifulSoup (bs4)****: Utilized for extracting information from web pages for real-time data updates.
+
 ****Large Language Models (LLMs)****: Leveraged from OpenAI for advanced Natural Language Processing (NLP) capabilities.
+
 ****OpenAI API Key****: Required for accessing OpenAI's LLMs and other services through their API.
+
 ****Language Model (e.g., TensorFlow Hub)****: Possibly used for fine-tuning and deploying the LLM for improved understanding and response generation.
+
 ****TensorFlow Hub****: Potentially used for accessing pre-trained language models or embeddings for NLP tasks.
 
 **WorkFlow**:
