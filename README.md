@@ -1,8 +1,8 @@
-**Problem Statement**: 
+#**Problem Statement**: 
 
 CampusConnect an intelligent chat program for Sacramento State University. The objective is to optimise the campus experience for users of Sac State University by providing them with assistance with departmental information, job postings, event calendars, and all other relevant information about Sac State University.
 
-**Requirements** :
+##**Requirements** :
 
 -Google Colab: Utilized as the primary development environment for coding and experimentation.
 
@@ -16,7 +16,16 @@ CampusConnect an intelligent chat program for Sacramento State University. The o
 
 -TensorFlow Hub: Potentially used for accessing pre-trained language models or embeddings for NLP tasks.
 
-**WorkFlow**:
+###**Source of Truth**:
+The data used in this project is sourced from Sacramento State University (CSUS) URLs, which serve as the authoritative source of information for various departments, courses, and resources. The following URLs are examples of the source of truth for specific data categories:
+
+CSUS Computer Science Department - Meet Us
+CSUS Course Catalog - Computer Science Courses
+By utilizing these URLs as the source of truth, we ensure that the data used in the project remains accurate, up-to-date, and aligned with official university information.
+
+
+
+####**WorkFlow**:
 
 The workflow consists of the following steps:
 
@@ -58,7 +67,7 @@ The workflow consists of the following steps:
 
 -The responses are presented to the user via the CampusConnect chat interface.
 
-**Getting Started**:
+######**Getting Started**:
 
 Follow the instructions below to set up and run CampusConnect on your local machine:
 
