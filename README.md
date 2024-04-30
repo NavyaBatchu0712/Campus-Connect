@@ -17,6 +17,7 @@ CampusConnect an intelligent chat program for Sacramento State University. The o
 -TensorFlow Hub: Potentially used for accessing pre-trained language models or embeddings for NLP tasks.
 
 **Source of Truth**:
+
 The data used in this project is sourced from Sacramento State University (CSUS) URLs, which serve as the authoritative source of information for various departments, courses, and resources. The following URLs are examples of the source of truth for specific data categories:
 
 CSUS Computer Science Department - Meet Us
