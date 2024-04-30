@@ -1,8 +1,8 @@
-**Problem Statement**: 
+## Problem Statement :  
 
 CampusConnect an intelligent chat program for Sacramento State University. The objective is to optimise the campus experience for users of Sac State University by providing them with assistance with departmental information, job postings, event calendars, and all other relevant information about Sac State University.
 
-#### Requirements
+## Requirements
 
 - *Google Colab*: Utilized as the primary development environment for coding and experimentation.    
 
@@ -16,7 +16,7 @@ CampusConnect an intelligent chat program for Sacramento State University. The o
                                                                                                                                                                                          
 - *TensorFlow Hub*: Potentially used for accessing pre-trained language models or embeddings for NLP tasks.
 
-**Source of Truth**:
+## Source of Truth :
 
 The data used in this project is sourced from Sacramento State University (CSUS) URLs, which serve as the authoritative source of information for various departments, courses, and resources. The following URLs are examples of the source of truth for specific data categories:
 
@@ -29,7 +29,7 @@ By utilizing these URLs as the source of truth, we ensure that the data used in 
 
 
 
-**WorkFlow**:
+## WorkFlow :
 
 The workflow consists of the following steps:
 
@@ -62,7 +62,7 @@ The workflow consists of the following steps:
     -Based on the retrieved documents and the query, the QA pipeline generates contextually relevant responses.
     -The responses are presented to the user via the CampusConnect chat interface.
 
-**Getting Started**:
+## Getting Started :
 
 Follow the instructions below to set up and run CampusConnect on your local machine:
 
@@ -75,14 +75,14 @@ Follow the instructions below to set up and run CampusConnect on your local mach
 ****Run the main application file****: python main.py.
 
 
-## Tech Stack
+## Tech Stack :
 
 - **OpenAI**: v1.24.0
 - **LangChain**: v0.1.16
 - **Python**: v3.10.12
 
 
-#### Future Work
+## Future Work :
 
 - *Adding More Data*: Expand the dataset by incorporating data from other relevant URLs related to Sacramento State University. This could include information from departmental pages, faculty profiles, or campus news sources.
 
@@ -90,12 +90,13 @@ Follow the instructions below to set up and run CampusConnect on your local mach
 
 - *Building a Web Application*: Develop a web application using HTML, CSS, and JavaScript to provide a user-friendly interface for accessing and interacting with the project's data. The application could include features such as search functionality, filtering options, and visualization tools to enhance the user experience.
 
+## References
 
-**References**:
-                                                                                                                                                                                         
-  https://dreamproit.com/blog/2024-02-06-building-domain-specific-LLMs-how-to-work-with-your-own-data/index.html
-  https://docs.taipy.io/en/release-3.0/knowledge_base/tutorials/chatbot/
-  https://www.linkedin.com/pulse/future-language-models-rise-domain-specific-expertise-magnuszewski-stwoe/
+- [Building Domain-Specific LLMs: How to Work with Your Own Data](https://dreamproit.com/blog/2024-02-06-building-domain-specific-LLMs-how-to-work-with-your-own-data/index.html)
+
+- [TAIPY Documentation: Chatbot Tutorials](https://docs.taipy.io/en/release-3.0/knowledge_base/tutorials/chatbot/)
+
+- [The Future of Language Models: The Rise of Domain-Specific Expertise](https://www.linkedin.com/pulse/future-language-models-rise-domain-specific-expertise-magnuszewski-stwoe/)
 
 ## Additional Resources and Learnings
 
