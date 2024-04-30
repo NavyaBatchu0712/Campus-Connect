@@ -27,6 +27,8 @@ By utilizing these URLs as the source of truth, we ensure that the data used in 
 
 
 
+
+
 **WorkFlow**:
 
 The workflow consists of the following steps:
@@ -71,6 +73,23 @@ Follow the instructions below to set up and run CampusConnect on your local mach
 ****Obtain an API key from OpenAI and set it as an environment variable****: export OPENAI_API_KEY="your-api-key"
 
 ****Run the main application file****: python main.py.
+
+
+## Future Work
+
+- **Adding More Data**: Expand the dataset by incorporating data from other relevant URLs related to Sacramento State University. This could include information from departmental pages, faculty profiles, or campus news sources.
+
+- **Fine-Tuning Data for Accuracy**: Implement techniques such as  model fine-tuning to improve the accuracy of the project's outputs. This involves refining the existing data sources and optimizing the models used in the project to ensure more precise and reliable results.
+
+- **Building a Web Application**: Develop a web application using HTML, CSS, and JavaScript to provide a user-friendly interface for accessing and interacting with the project's data. The application could include features such as search functionality, filtering options, and visualization tools to enhance the user experience.
+
+
+**References**:
+                                                                                                                                                                                         
+          https://dreamproit.com/blog/2024-02-06-building-domain-specific-LLMs-how-to-work-with-your-own-data/index.html
+          https://docs.taipy.io/en/release-3.0/knowledge_base/tutorials/chatbot/
+          https://www.linkedin.com/pulse/future-language-models-rise-domain-specific-expertise-magnuszewski-stwoe/
+          
 
 
 
