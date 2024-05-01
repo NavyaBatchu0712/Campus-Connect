@@ -70,9 +70,9 @@ The workflow consists of the following steps:
 
     -User queries, such as "How to contact registration office?", are retrieved for processing.
     -Based on the retrieved documents and the query, the QA pipeline generates contextually relevant responses.
-  <img width="1023" alt="image" src="https://github.com/NavyaBatchu0712/Campus-Connect/assets/61104591/c0159a47-4db5-4000-9a5c-18737a71aa90">
-
-    -The responses are presented to the user via the CampusConnect chat interface.
+<img width="1023" alt="Screenshot 2024-04-30 at 10 41 05 PM" src="https://github.com/NavyaBatchu0712/Campus-Connect/assets/61104591/87484800-d152-4d89-90bc-5672ede152e5">
+     
+      -The responses are presented to the user via the CampusConnect chat interface.
 
 ## Getting Started :
 
