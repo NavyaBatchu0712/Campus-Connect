@@ -37,6 +37,32 @@ The workflow consists of the following steps:
 
          -Initially, hyperlinks are extracted from URLs using BeautifulSoup (bs4).
          -This step aims to gather relevant data sources for subsequent processing.
+                    ```python
+    def fetch_data_and_save(url, output_dir):
+    """
+    Fetches data from the given URL and saves it to a file in the specified output directory.
+
+    Parameters:
+        url (str): The URL from which to fetch the data.
+        output_dir (str): The directory where the data should be saved.
+    """
+    try:
+        response = requests.get(url)
+        response.raise_for_status()  # Raise an exception for bad status codes
+        
+        # Extracting data here as needed
+        soup = BeautifulSoup(response.text, 'html.parser')
+        title = soup.title.string.strip()  # Extracting title of the webpage
+        
+        # Create a file name based on the URL
+        filename = os.path.join(output_dir, f"{title}.txt")
+        
+        # Store data in the file
+        with open(filename, "w") as file:
+            file.write(response.text)
+            
+    except Exception as e:
+        print(f"Error fetching data from {url}: {e}")
 
 ****Text Embedding with TensorFlow Hub****:
 
