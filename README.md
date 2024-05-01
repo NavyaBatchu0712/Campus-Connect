@@ -59,13 +59,19 @@ The workflow consists of the following steps:
 ****QA Pipeline with OpenAI API and LLM****:
 
       -Utilizing the OpenAI API key, a Question Answering (QA) pipeline is instantiated.
+   <img width="1023" alt="image" src="https://github.com/NavyaBatchu0712/Campus-Connect/assets/61104591/dcd193fc-d294-4fdb-8faf-257d0749bb25">
+
      -The text data is segmented into chunks, and a document search is conducted using LangChain.
+  <img width="1023" alt="image" src="https://github.com/NavyaBatchu0712/Campus-Connect/assets/61104591/4aaf3601-7abb-46e1-a061-d3f7bf2ee02d">
+
      -This step ensures that relevant documents containing potential answers are identified efficiently.
 
 ****Query Processing and Response Generation****:
 
     -User queries, such as "How to contact registration office?", are retrieved for processing.
     -Based on the retrieved documents and the query, the QA pipeline generates contextually relevant responses.
+  <img width="1023" alt="image" src="https://github.com/NavyaBatchu0712/Campus-Connect/assets/61104591/c0159a47-4db5-4000-9a5c-18737a71aa90">
+
     -The responses are presented to the user via the CampusConnect chat interface.
 
 ## Getting Started :
