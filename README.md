@@ -49,7 +49,11 @@ The workflow consists of the following steps:
 ****Document Similarity Search****:
 
         -The similarity_search(query) function is employed to extract similar data based on the user's query.
+          <img width="1056" alt="Screenshot 2024-04-30 at 10 35 12 PM" src="https://github.com/NavyaBatchu0712/Campus-Connect/assets/61104591/91381a17-89c0-4e83-829f-b082f6efc7f9">
+
         -Utilizing similarity scores as metrics, relevant documents are identified for further processing.
+        <img width="1056" alt="image" src="https://github.com/NavyaBatchu0712/Campus-Connect/assets/61104591/84240110-b75a-4d31-95fd-303d532368b8">
+
         -This step ensures that the retrieved documents are contextually aligned with the user's query.
 
 ****QA Pipeline with OpenAI API and LLM****:
@@ -87,6 +91,9 @@ Follow the instructions below to set up and run CampusConnect on your local mach
 - **OpenAI**: v1.24.0
 - **LangChain**: v0.1.16
 - **Python**: v3.10.12
+
+## Execution time :
+0 secodns (measured in Google Colab and local PC)
 
 
 ## Future Work :
