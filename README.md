@@ -68,6 +68,7 @@ The workflow consists of the following steps:
 
 ****Query Processing and Response Generation****:
 
+<img width="1015" alt="Screenshot 2024-04-30 at 10 29 39 PM" src="https://github.com/NavyaBatchu0712/Campus-Connect/assets/61104591/919c8d41-ac7c-4995-b525-a46c305d877c">
     -User queries, such as "How to contact registration office?", are retrieved for processing.
     -Based on the retrieved documents and the query, the QA pipeline generates contextually relevant responses.
 <img width="1023" alt="Screenshot 2024-04-30 at 10 41 05 PM" src="https://github.com/NavyaBatchu0712/Campus-Connect/assets/61104591/87484800-d152-4d89-90bc-5672ede152e5">
@@ -88,7 +89,8 @@ Follow the instructions below to set up and run CampusConnect on your local mach
 
 ## Results :
 
-<img width="1015" alt="Screenshot 2024-04-30 at 10 29 39 PM" src="https://github.com/NavyaBatchu0712/Campus-Connect/assets/61104591/919c8d41-ac7c-4995-b525-a46c305d877c">
+<img width="1032" alt="image" src="https://github.com/NavyaBatchu0712/Campus-Connect/assets/61104591/d6e3973c-0a5d-4494-aa1b-691c96ae0ab4">
+
 
 
 
