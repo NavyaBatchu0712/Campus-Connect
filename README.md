@@ -67,8 +67,6 @@ The workflow consists of the following steps:
      -This step ensures that relevant documents containing potential answers are identified efficiently.
 
 ****Query Processing and Response Generation****:
-
-<img width="1015" alt="Screenshot 2024-04-30 at 10 29 39 PM" src="https://github.com/NavyaBatchu0712/Campus-Connect/assets/61104591/919c8d41-ac7c-4995-b525-a46c305d877c">
                                                                                                                                             
     -User queries, such as "How to contact registration office?", are retrieved for processing.
     -Based on the retrieved documents and the query, the QA pipeline generates contextually relevant responses.
