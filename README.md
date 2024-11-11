@@ -40,6 +40,8 @@ Campus Connect was developed to streamline access to university information thro
 <img width="577" alt="image" src="https://github.com/user-attachments/assets/75ca1fc6-4269-4fa5-9544-e5a401f2166c">
 <img width="453" alt="image" src="https://github.com/user-attachments/assets/91c0d93d-248f-422c-b640-df13748efce4">
 <img width="361" alt="image" src="https://github.com/user-attachments/assets/e6baf7b2-e63c-49dc-986a-c1ea361df909">
+<img width="341" alt="image" src="https://github.com/user-attachments/assets/447b4299-4323-4b7f-85c8-45e4d5bc431f">
+
 
 ### Dataset
 - **Data Source**: University-specific data, including general information, FAQs, and student resources, was collected and curated to form the chatbot's knowledge base.
@@ -60,6 +62,8 @@ Campus Connect was developed to streamline access to university information thro
    - Leveraged LLMs, Retrieval-Augmented Generation (RAG), and NLP techniques for accurate, context-aware response generation.
    - Integrated FAISS-based vector search for hybrid search capabilities and applied reciprocal rank fusion for result ranking.
    -  - **CNN for Images and Maps**: Used Convolutional Neural Networks (CNN) to process images of campus maps and building structures, enabling location-based queries and visually assisted responses.
+      - <img width="605" alt="image" src="https://github.com/user-attachments/assets/db2d02e6-549a-46f3-a0bb-864349c9e4ad">
+
    - **Speech-to-Text Integration**: Enabled voice input using speech-to-text processing to allow users to interact with the chatbot via spoken queries, which are converted to text for processing.
 <img width="176" alt="image" src="https://github.com/user-attachments/assets/d6e8fe64-a83b-44a5-820a-4704a14a6104">
 
