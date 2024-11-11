@@ -12,8 +12,6 @@ Campus Connect is an intelligent chatbot system developed for Sacramento State U
 - [Methodology](#methodology)
 - [Results](#results)
 - [Technologies Used](#technologies-used)
-- [Contributing](#contributing)
-
 
 ---
 
@@ -78,20 +76,26 @@ Campus Connect was developed to streamline access to university information thro
 - **Accuracy**: High accuracy in answering FAQs and general campus queries.
 - **Performance**: Efficient query handling and response generation through hybrid search.
 - **Error Analysis**: Minor issues in multi-step queries were addressed through model fine-tuning.
+- <img width="555" alt="image" src="https://github.com/user-attachments/assets/980a328b-b8a0-4bf6-9d83-c9c07816eaf0">
+
 
 ### Technologies Used
 - **Backend**: Python, Flask, TensorFlow/Keras
 - **Frontend**: HTML, CSS, JavaScript, React
-- **Database**: Firebase, MySQL
-- **Machine Learning**: OpenAI, BM25, FAISS, NLP
-- **Libraries and Tools**: OpenCV, LLM, RAG, CharacterTextSplitter
+- **Machine Learning**: OpenAI, FAISS, NLP
+- **Libraries and Tools**:  LLM, RAG, CharacterTextSplitter
 
-### Contributing
-Contributions to Campus Connect are welcome! Please follow these steps to contribute:
+### References
+- [DeepSet Documentation on Generative Question Answering](https://docs.cloud.deepset.ai/docs/generative-question-answering)
+- [Google Developers: Convolutional Neural Networks](https://developers.google.com/machine-learning/practica/image-classification/convolutional-neural-networks)
+- [Haystack by Deepset: NLP Framework for Question Answering](https://haystack.deepset.ai/)
+- [OpenAI Documentation: Large Language Models (LLMs)](https://platform.openai.com/docs/)
+- Zhu, J., Chen, X., Li, P., & Liu, W. (2020). Design of a face recognition system based on convolutional neural network (CNN). *Engineering, Technology & Applied Science Research, 10*(3), 5608-5612.
+- [BM25 Algorithm for Information Retrieval](https://en.wikipedia.org/wiki/Okapi_BM25)
+- [FAISS: Facebook AI Similarity Search](https://faiss.ai/)
 
-1. **Fork the repository**.
-2. **Create a new branch**:
-   ```bash
-   git checkout -b feature/YourFeature
+
+
+
 
 
