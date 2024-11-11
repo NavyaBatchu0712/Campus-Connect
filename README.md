@@ -18,14 +18,17 @@ CampusConnect an intelligent chat program for Sacramento State University. The o
 
 ## Source of Truth :
 
-The data used in this project is sourced from Sacramento State University (CSUS) URLs, which serve as the authoritative source of information for various departments, courses, and resources. The following URLs are examples of the source of truth for specific data categories:
+The dataset is a crucial component of our CampusConnect project. To provide users with accurate and relevant responses, CampusConnect is trained exclusively on data from Sacramento State University. This approach ensures that the system offers precise information tailored to the university's specific needs.
 
-                                https://catalog.csus.edu/courses-a-z/csc/
-                                https://www.csus.edu/college/engineering-computer-science/computer-science/meet-us/
+Our data collection focuses on gathering and organizing comprehensive information from official Sacramento State resources, including:
 
-By utilizing these URLs as the source of truth, we ensure that the data used in the project remains accurate, up-to-date, and aligned with official university information.
+Course offerings and descriptions
+Faculty and staff profiles
+Campus facilities and locations
+Administrative processes and services
+By curating data solely from Sacramento State URLs, CampusConnect is designed to respond effectively to a broad range of university-related queries, enhancing both accuracy and user satisfaction.
 
-
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/fb0e6f00-86d6-4288-9bdd-05b579c1b213">
 
 
 
