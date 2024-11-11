@@ -13,8 +13,7 @@ Campus Connect is an intelligent chatbot system developed for Sacramento State U
 - [Results](#results)
 - [Technologies Used](#technologies-used)
 - [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
+
 
 ---
 
@@ -39,16 +38,60 @@ Campus Connect was developed to streamline access to university information thro
 - **Feedback Submission**: User feedback is collected and sent to the backend.
 
 ### Demo
+<img width="361" alt="image" src="https://github.com/user-attachments/assets/dcfb84fd-f0c8-4b06-900c-f26054972309">
+<img width="577" alt="image" src="https://github.com/user-attachments/assets/75ca1fc6-4269-4fa5-9544-e5a401f2166c">
+<img width="453" alt="image" src="https://github.com/user-attachments/assets/91c0d93d-248f-422c-b640-df13748efce4">
+<img width="361" alt="image" src="https://github.com/user-attachments/assets/e6baf7b2-e63c-49dc-986a-c1ea361df909">
 
-                
+### Dataset
+- **Data Source**: University-specific data, including general information, FAQs, and student resources, was collected and curated to form the chatbot's knowledge base.
+- **Data Format**: A combination of structured data (CSV files for FAQs and contacts) and unstructured text documents (university-related information).
+- **Preprocessing**: Data was preprocessed to improve the chatbot’s response quality. Techniques included:
+  - **Tokenization**: Breaking down text into manageable tokens.
+  - **Text Cleaning**: Removing irrelevant characters, stopwords, and special symbols.
+  - **Encoding**: Using sentence embeddings to enable efficient retrieval and ranking of responses.
+    <img width="799" alt="image" src="https://github.com/user-attachments/assets/37ab1b5a-5e2f-4976-bcd8-db518da6a766">
 
-### Installation
-To set up the Campus Connect project locally, follow these steps:
 
-1. **Clone the repository**:
+### Methodology
+1. **Data Collection**:
+   - Created a dataset specific to Sacramento State University, focusing on FAQs and commonly requested resources.
+   - Used both structured (CSV) and unstructured data (text documents).
+
+2. **Model Architecture**:
+   - Leveraged LLMs, Retrieval-Augmented Generation (RAG), and NLP techniques for accurate, context-aware response generation.
+   - Integrated FAISS-based vector search for hybrid search capabilities and applied reciprocal rank fusion for result ranking.
+   -  - **CNN for Images and Maps**: Used Convolutional Neural Networks (CNN) to process images of campus maps and building structures, enabling location-based queries and visually assisted responses.
+   - **Speech-to-Text Integration**: Enabled voice input using speech-to-text processing to allow users to interact with the chatbot via spoken queries, which are converted to text for processing.
+<img width="176" alt="image" src="https://github.com/user-attachments/assets/d6e8fe64-a83b-44a5-820a-4704a14a6104">
+
+
+3. **Training and Optimization**:
+   - Fine-tuned the chatbot to handle queries in context, applying techniques like “lost in the middle” ordering and query expansion.
+   - Used `CharacterTextSplitter` to manage chunk sizes effectively and semantic ranking to ensure response relevance.
+
+4. **Evaluation**:
+   - Tested on various cases, including follow-up and contextual questions, to assess accuracy and response quality.
+
+### Results
+- **User Satisfaction**: Positive feedback on features like interactive suggestions and voice input.
+- **Accuracy**: High accuracy in answering FAQs and general campus queries.
+- **Performance**: Efficient query handling and response generation through hybrid search.
+- **Error Analysis**: Minor issues in multi-step queries were addressed through model fine-tuning.
+
+### Technologies Used
+- **Backend**: Python, Flask, TensorFlow/Keras
+- **Frontend**: HTML, CSS, JavaScript, React
+- **Database**: Firebase, MySQL
+- **Machine Learning**: OpenAI, BM25, FAISS, NLP
+- **Libraries and Tools**: OpenCV, LLM, RAG, CharacterTextSplitter
+
+### Contributing
+Contributions to Campus Connect are welcome! Please follow these steps to contribute:
+
+1. **Fork the repository**.
+2. **Create a new branch**:
    ```bash
-   git clone https://github.com/yourusername/campus-connect.git
-
-
+   git checkout -b feature/YourFeature
 
 
