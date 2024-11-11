@@ -1,136 +1,102 @@
-## Problem Statement :  
+Campus Connect
+Campus Connect is an intelligent chatbot system developed for Sacramento State University, designed to provide an efficient and responsive way for students, faculty, and staff to interact with campus information. By leveraging advanced NLP, LLM, and RAG techniques, this chatbot system enhances user engagement and access to university-related information.
 
-CampusConnect an intelligent chat program for Sacramento State University. The objective is to optimise the campus experience for users of Sac State University by providing them with assistance with departmental information, job postings, event calendars, and all other relevant information about Sac State University.
+Table of Contents
+Project Overview
+Features
+Demo
+Installation
+Usage
+Methodology
+Results
+Technologies Used
+Contributing
+License
+Acknowledgments
+Project Overview
+Purpose: Campus Connect was created to streamline access to university information through a user-friendly chatbot, making it easier for students and staff to get answers to frequently asked questions.
+Context: The project was developed at Sacramento State University, incorporating LLMs to improve chatbot interaction and comprehension.
+Scope: The chatbot provides access to university-related resources, such as campus tours, tuition information, activity options, and on-campus job opportunities.
+Features
+Message Handling: Supports both user and bot messages, managing text responses and image-based replies.
+Speech Recognition: Allows users to input messages via voice with start/stop functionality.
+Feedback Mechanism: Users can provide feedback through a star rating and emoji feedback for bot responses.
+Interactive Suggestions: Context-aware suggestions are offered to guide the conversation.
+Information Options: Pre-configured buttons give access to information like campus tours, tuition, upcoming events, and job opportunities.
+Hyperlink Parsing: Automatically detects URLs and email addresses, converting them into clickable links.
+Emoji Pop-Up: Allows quick user reactions with emojis after each bot message.
+Editable User Messages: Users can edit their previously sent messages.
+Image Processing: Supports image display as part of the conversation.
+Loading Indicator: Shows a loading animation while the bot processes requests.
+Feedback Submission: User feedback is sent to the backend for analysis.
+Demo
+Include screenshots, gifs, or a link to a live demo if available.
 
-## Requirements
+Installation
+To set up the Campus Connect project locally, follow these steps:
 
-- *Google Colab*: Utilized as the primary development environment for coding and experimentation.    
+Clone the repository:
 
-- *Web Scraping with BeautifulSoup (bs4)*: Utilized for extracting information from web pages for real-time data updates.
-                                                                                                                                                                                         
-- *Large Language Models (LLMs)*: Leveraged from OpenAI for advanced Natural Language Processing (NLP) capabilities.
-                                                                                                                                                                                         
-- *OpenAI API Key*: Required for accessing OpenAI's LLMs and other services through their API.
+bash
+Copy code
+git clone https://github.com/yourusername/campus-connect.git
+Navigate into the project directory:
 
-- *Language Model (e.g., TensorFlow Hub)*: Possibly used for fine-tuning and deploying the LLM for improved understanding and response generation.
-                                                                                                                                                                                         
-- *TensorFlow Hub*: Potentially used for accessing pre-trained language models or embeddings for NLP tasks.
+bash
+Copy code
+cd campus-connect
+Install dependencies:
 
-## Source of Truth :
+bash
+Copy code
+pip install -r requirements.txt
+Set up environment variables:
 
-The dataset is a crucial component of our CampusConnect project. To provide users with accurate and relevant responses, CampusConnect is trained exclusively on data from Sacramento State University. This approach ensures that the system offers precise information tailored to the university's specific needs.
+Create a .env file and add required environment variables as per .env.example.
+Run the project:
 
-Our data collection focuses on gathering and organizing comprehensive information from official Sacramento State resources, including:
+bash
+Copy code
+python main.py  # Replace with the actual main file if different
+Usage
+Starting the server:
 
-Course offerings and descriptions
-Faculty and staff profiles
-Campus facilities and locations
-Administrative processes and services
-By curating data solely from Sacramento State URLs, CampusConnect is designed to respond effectively to a broad range of university-related queries, enhancing both accuracy and user satisfaction.
+bash
+Copy code
+python app.py
+Accessing the chatbot:
 
-<img width="800" alt="image" src="https://github.com/user-attachments/assets/fb0e6f00-86d6-4288-9bdd-05b579c1b213">
+Open a browser and navigate to http://localhost:5000 to interact with the chatbot.
+Features in Use:
 
+Explore features like image-based replies, voice input, and context-aware suggestions.
+Methodology
+Data Collection:
 
+University-specific data was collected, including general information and FAQs, to populate the chatbot’s knowledge base.
+A combination of text-based documents and structured data formats was used.
+Model Architecture:
 
-## WorkFlow :
+The chatbot uses a combination of LLMs, RAG (Retrieval-Augmented Generation), and NLP techniques to process and respond to queries.
+BM25 and FAISS-based vector search methods were incorporated to retrieve relevant results, applying reciprocal rank fusion for result ranking.
+Training and Optimization:
 
-The workflow consists of the following steps:
+Fine-tuning was performed to improve the chatbot’s responses, including context handling, “lost in the middle” ordering, and query expansion.
+Text splitting techniques with CharacterTextSplitter and semantic ranking were applied to improve response relevance and manage chunk sizes effectively.
+Evaluation:
 
-****Data Extraction with BeautifulSoup (bs4)****:
-
-         -Initially, hyperlinks are extracted from URLs using BeautifulSoup (bs4).
-         -This step aims to gather relevant data sources for subsequent processing.
-              
-
-****Text Embedding with TensorFlow Hub****:
-
-         -The extracted hyperlinks are utilized to retrieve text data.
-         -TensorFlow Hub is employed to embed the text data into high-dimensional vector representations.
-         -This process enhances the semantic understanding of the text, facilitating more effective information retrieval.
-                
-
-****Document Similarity Search****:
-
-        -The similarity_search(query) function is employed to extract similar data based on the user's query.
-   <img width="1056" alt="Screenshot 2024-04-30 at 10 35 12 PM" src="https://github.com/NavyaBatchu0712/Campus-Connect/assets/61104591/91381a17-89c0-4e83-829f-b082f6efc7f9">
-
-        -Utilizing similarity scores as metrics, relevant documents are identified for further processing.
- <img width="1056" alt="image" src="https://github.com/NavyaBatchu0712/Campus-Connect/assets/61104591/84240110-b75a-4d31-95fd-303d532368b8">
-
-        -This step ensures that the retrieved documents are contextually aligned with the user's query.
-
-****QA Pipeline with OpenAI API and LLM****:
-
-      -Utilizing the OpenAI API key, a Question Answering (QA) pipeline is instantiated.
-   <img width="1023" alt="image" src="https://github.com/NavyaBatchu0712/Campus-Connect/assets/61104591/dcd193fc-d294-4fdb-8faf-257d0749bb25">
-
-     -The text data is segmented into chunks, and a document search is conducted using LangChain.
-  <img width="1023" alt="image" src="https://github.com/NavyaBatchu0712/Campus-Connect/assets/61104591/4aaf3601-7abb-46e1-a061-d3f7bf2ee02d">
-
-     -This step ensures that relevant documents containing potential answers are identified efficiently.
-
-****Query Processing and Response Generation****:
-                                                                                                                                            
-    -User queries, such as "How to contact registration office?", are retrieved for processing.
-    -Based on the retrieved documents and the query, the QA pipeline generates contextually relevant responses.
-<img width="1023" alt="Screenshot 2024-04-30 at 10 41 05 PM" src="https://github.com/NavyaBatchu0712/Campus-Connect/assets/61104591/87484800-d152-4d89-90bc-5672ede152e5">
-     
-      -The responses are presented to the user via the CampusConnect chat interface.
-
-## Getting Started :
-
-Follow the instructions below to set up and run CampusConnect on your local machine:
-
-****Clone the repository****: git clone https://github.com/yourusername/campus-connect.git.
-
-****Install the required dependencies****: pip install -r requirements.txt.
-
-****Obtain an API key from OpenAI and set it as an environment variable****: export OPENAI_API_KEY="your-api-key"
-
-****Run the main application file****: python main.py.
-
-## Results :
-
-<img width="1032" alt="image" src="https://github.com/NavyaBatchu0712/Campus-Connect/assets/61104591/d6e3973c-0a5d-4494-aa1b-691c96ae0ab4">
-
-
-
-
-## Tech Stack :
-
-- **OpenAI**: v1.24.0
-- **LangChain**: v0.1.16
-- **Python**: v3.10.12
-
-## Execution time :
-0 secodns (measured in Google Colab and local PC)
-
-
-## Future Work :
-
-- *Adding More Data*: Expand the dataset by incorporating data from other relevant URLs related to Sacramento State University. This could include information from departmental pages, faculty profiles, or campus news sources.
-
-- *Fine-Tuning Data for Accuracy*: Implement techniques such as  model fine-tuning to improve the accuracy of the project's outputs. This involves refining the existing data sources and optimizing the models used in the project to ensure more precise and reliable results.
-
-- *Building a Web Application*: Develop a web application using HTML, CSS, and JavaScript to provide a user-friendly interface for accessing and interacting with the project's data. The application could include features such as search functionality, filtering options, and visualization tools to enhance the user experience.
-
-## References
-
-- [Building Domain-Specific LLMs: How to Work with Your Own Data](https://dreamproit.com/blog/2024-02-06-building-domain-specific-LLMs-how-to-work-with-your-own-data/index.html)
-
-- [TAIPY Documentation: Chatbot Tutorials](https://docs.taipy.io/en/release-3.0/knowledge_base/tutorials/chatbot/)
-
-- [The Future of Language Models: The Rise of Domain-Specific Expertise](https://www.linkedin.com/pulse/future-language-models-rise-domain-specific-expertise-magnuszewski-stwoe/)
-
-## Additional Resources and Learnings
-
-- [Haystack Tutorials](https://haystack.deepset.ai/tutorials): Explore tutorials on using the Haystack framework for building question-answering systems, semantic search, and more.
-
-- [Comprehensive Guide for Building RAG-based LLM Applications (Part 1)](https://www.anyscale.com/blog/a-comprehensive-guide-for-building-rag-based-llm-applications-part-1): Learn about building RAG (Retriever-Reader-Generator)-based Large Language Model (LLM) applications, including architecture, components, and best practices.
-
-- [LangChain Crash Course](https://codebasics.io/resources/langchain-crash-course): Dive into a crash course on LangChain, covering fundamental concepts, usage, and examples for implementing language models and NLP tasks.
-
-          
+Various cases, such as follow-up questions and contextual queries, were tested to ensure the chatbot’s accuracy and robustness.
+Results
+User Satisfaction: Positive feedback was gathered based on the user experience features, such as interactive suggestions and voice input.
+Accuracy: The chatbot achieved high accuracy in answering FAQ-type questions about campus resources and events.
+Performance: Efficient query handling and response generation, with improvements in relevance achieved through hybrid search methods.
+Error Analysis: Minor misinterpretations in complex, multi-step queries were addressed through model fine-tuning.
+Technologies Used
+Backend: Python, Flask, TensorFlow/Keras
+Frontend: HTML, CSS, JavaScript, React
+Database: Firebase, MySQL
+Machine Learning: OpenAI, BM25, FAISS, NLP
+Libraries and Tools: OpenCV, LLM, RAG, CharacterTextSplitter
 
 
 
